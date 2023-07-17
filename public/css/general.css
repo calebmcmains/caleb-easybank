@@ -1,0 +1,252 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+Font sizes (px):
+16 / 32 
+
+Font family:
+[Public Sans](https://fonts.google.com/specimen/Public+Sans)
+Weights: 300, 400, 700
+
+Font weights:
+300   light
+400   default
+700   bold
+
+Line heights:
+1.05    extra small
+1.2     small
+1.5     default
+1.75    large
+
+--- 02 COLORS
+Primary:
+Dark cyan:  hsl(158, 36%, 37%)
+Cream:      hsl(30, 38%, 92%)
+
+Neutrals:
+Grayish Blue:       hsl(233, 8%, 62%)
+Light Grayish Blue: hsl(220, 16%, 96%)
+Very Light Gray:    hsl(0, 0%, 98%)
+White:              hsl(0, 0%, 100%)
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER RADIUS
+500px -> pill shape
+
+
+--- 07 WHITE SPACE
+Spacing system (px):
+8 /12 / 16 / 24
+*/
+
+/* ********************************** */
+/* CSS RESETS */
+/* ********************************** */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --CLR-PRIMARY-DARKBLUE: #2d314d;
+  --CLR-PRIMARY-GREEN: #31d35c;
+  --CLR-NEUTRAL-CYAN: #2bb7da;
+  --CLR-NEUTRAL-DARK-GRAYBLUE: #9698a6;
+  --CLR-NEUTRAL-LIGHT-GRAYBLUE: #f3f4f6;
+  --CLR-NEUTRAL-LIGHT-GRAY: #fafafa;
+  --CLR-NEUTRAL-WHITE: #ffffff;
+  --CLR-TEXT-DARK: #000;
+  --CLR-GRAD-BTN: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+
+  --FF-PRIMARY: "Public Sans", sans-serif;
+
+  --FW-LIGHT: 300;
+  --FW-DEFAULT: 400;
+  --FW-BOLD: 700;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  color: var(--CLR-TEXT-DARK);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ********************************** */
+/* BASE STYLES */
+/* ********************************** */
+body {
+  font-size: 1rem;
+  font-family: var(--FF-PRIMARY);
+  font-weight: var(--FW-DEFAULT);
+  background-color: var(--CLR-NEUTRAL-LIGHT-GRAY);
+}
+
+/* ********************************** */
+/* RESUABLE COMPONENTS */
+/* ********************************** */
+.container-full {
+  width: 100%;
+  background-color: var(--CLR-NEUTRAL-WHITE);
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 6rem;
+}
+.grid:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--FW-LIGHT);
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1rem;
+  color: var(--CLR-NEUTRAL-DARK-GRAYBLUE);
+  margin-bottom: 2rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 500px;
+
+  /* only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background: var(--CLR-PRIMARY-GREEN);
+  background: linear-gradient(
+    90deg,
+    var(--CLR-PRIMARY-GREEN) 0%,
+    var(--CLR-NEUTRAL-CYAN) 100%
+  );
+  color: var(--CLR-NEUTRAL-WHITE);
+}
+
+.btn-full:hover,
+.btn-full:active {
+  opacity: 75%;
+}
+
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--CLR-NEUTRAL-CYAN);
+} */
