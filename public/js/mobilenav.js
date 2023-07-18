@@ -19,6 +19,7 @@ allLinks.forEach((link) => {
     // close mobile navigation
     if (link.classList.contains("main-nav-link")) {
       header.classList.toggle("nav-open");
+      body.classList.toggle("stop-scrolling");
     }
   });
 });

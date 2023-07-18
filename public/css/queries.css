@@ -62,7 +62,7 @@
     width: 90%;
     z-index: 9999;
     padding: 1rem 0;
-    transition: all 300ms ease-in;
+    transition: all 200ms ease;
 
     /* 1) Hide it visually */
     opacity: 0;
@@ -110,7 +110,7 @@
     background: linear-gradient(#2d314d, #2d314d00);
     display: flex;
     opacity: 1;
-    transition: all 300ms ease-in;
+    transition: all 200ms ease;
   }
 
   .nav-open .main-nav {
