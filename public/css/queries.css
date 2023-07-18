@@ -132,7 +132,7 @@
   /* HERO */
   /* ********************************** */
   .section-hero {
-    padding: 0 0 7rem 0;
+    padding: 0 0 4rem 0;
   }
 
   .hero {
@@ -144,19 +144,19 @@
 
   .hero-text-box {
     text-align: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .hero-image-box {
     position: static;
     background-image: url(../../images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 0rem -20rem;
+    background-position: 0rem -23rem;
   }
 
   .hero-img {
     position: relative;
-    top: 0rem;
+    top: 2rem;
     transform: scale(0.875);
   }
 
@@ -172,7 +172,7 @@
   /* WHY */
   /* ********************************** */
   .section-why {
-    padding: 7rem 5rem;
+    padding: 4rem 2rem;
   }
 
   .why-text {
@@ -181,6 +181,10 @@
 
   .why-list {
     flex-direction: column;
+  }
+
+  .why-list div:last-of-type p {
+    margin-bottom: 0;
   }
 
   .why-list img {
@@ -195,7 +199,7 @@
   /* ARTICLES */
   /* ********************************** */
   .section-articles {
-    padding: 7rem 5rem;
+    padding: 4rem 2rem;
   }
 
   .section-articles .heading-secondary {
