@@ -1,92 +1,94 @@
-# Frontend Mentor - Easybank landing page
+# Frontend Mentor - Easybank landing page solution
 
-![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## Overview
 
-## The challenge
+This was a fun project to work on.
+Mock landing page for a finacial institution. Desktop and mobile friendly.
+I started with desktop and worked it into mobile. No frameworks or libraries used just regular HTML, CSS and JS
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./screenshots/desktop.png)
+![](./screenshots/mobile.png)
+![](./screenshots/mobile_nav.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Github Repo](https://github.com/calebmcmains/caleb-easybank.git)
+- Live Site URL: [Github Page](https://calebmcmains.github.io/caleb-easybank/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+I spent a good amount of time visualizing the site design. I did not have the figma file. Everything had to be eyeballed.
+After looking everything over I started to make all of my root variables that I knew I was going to use throughout the who project. This made styling so much easier and makes changes in the future easier casue most things are based on the variables.
+I also seperated my CSS files in to three files:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+1. general.css for things I could use anywhere even on a different page of the site if there was one
+2. style.css for anything custome to the specific page and elements I was working with
+3. queries.css for changing styles to fit specific screen sizes as I moved down to mobile
 
-## Building your project
+- I wrote the html by section, so whatever looked like section in the design I would write that HTML
+- I got the HTML to where I thought it made sense I wrote classes for all the elements and moved them over to my CSS
+- Then I stated styling in CSS to make it look like the design screenshot provided
+- Reinse and repeat for each section
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Desktop-first workflow
+- Chrome Dev Tools
 
-## Deploying your project
+### What I learned
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+The biggest thing I learned is that going from Desktop to smaller sizes actually doesnt require you to make too many changes as long as you have set yourself up properly in the beginning.
+If some of those core styles and variables wherent there and everything was custom, nothing resuable things would have been different!
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Put the prep in, ITS WORTH IT!
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Continued development
 
-## Create a custom `README.md`
+I'd love to keep growing in my frontend development. I did struggle working with "::before" and "::after" psudo-elements and really understanding how those work. I'd like to get better with those.
+I also had a ton of fun working with Grid and Flexbox, I look forward to getting into that more.
+Also accessibility I know nothing! I'd like to be more aware of those things and implement them properly. I feel the resposiblity to do that well for those who rely on it!
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Useful resources
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- [Google](https://www.google.com) - I'm serious...don't hesitate to google things....but please work on being GOOD and googling. Theres a difference
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## Author
 
-## Submitting your solution
+- Website - [Caleb McMains](https://www.calebmcmains.com)
+- Frontend Mentor - [@calebmcmains](https://www.frontendmentor.io/profile/calebmcmains)
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Acknowledgments
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Shout out to Christian Ark, I viewed his solution to help me with the image behind the image of the main hero section
+[Christian Ark's Solution](https://github.com/christianArk/easybank-landing-page.git)
